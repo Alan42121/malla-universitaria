@@ -4,6 +4,7 @@ document.querySelectorAll('.ramo').forEach(ramo => {
   });
 });
 
+
 // Guardar estado
 document.querySelectorAll('.ramo').forEach((ramo, index) => {
   const key = `ramo-${index}`;
