@@ -31,49 +31,30 @@ body {
   margin-bottom: 10px;
 }
 
-/* Estilos para las tablas */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 14px;
-}
-
-th, td {
-  border: 1px solid #ddd;
-  padding: 6px 8px;
-  text-align: center;
-}
-
-th {
-  background-color: #4CAF50;
-  color: white;
-}
-
-/* Estilos para la lista, si decides usarla */
-li {
-  cursor: pointer;
-  margin: 5px 0;
-  padding: 5px;
-  border-left: 5px solid transparent;
-  transition: all 0.2s ease;
-}
-
+/* Estilo para los ramos aprobados */
 .ramo.aprobado {
   background: #2ecc71; /* verde */
   color: white;
   box-shadow: 0 0 10px #27ae60;
 }
 
+/* Estilo por defecto para todos los ramos (grid) */
+.grid-malla {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 12px;
+}
 
-
-.semestre .grid-malla {
+/* Estilo solo para semestres verticales */
+.grid-vertical {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 
+/* Estilo de cada ramo */
 .ramo {
-  background: #165aab; /* azul parecido al de la imagen */
+  background: #165aab; /* azul tipo malla */
   color: white;
   padding: 12px;
   border-radius: 8px;
@@ -81,8 +62,10 @@ li {
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
   cursor: pointer;
   user-select: none;
+  transition: all 0.2s ease;
 }
 
+/* Sub-elementos dentro del ramo */
 .ramo .codigo {
   font-weight: bold;
   font-size: 12px;
@@ -92,6 +75,7 @@ li {
 .ramo .nombre {
   font-weight: 600;
   margin-top: 6px;
+  text-transform: uppercase;
 }
 
 .ramo .creditos {
@@ -99,4 +83,3 @@ li {
   margin-top: 4px;
   opacity: 0.85;
 }
-
