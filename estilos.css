@@ -66,9 +66,9 @@ li {
 
 
 
-.grid-malla {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+.semestre .grid-malla {
+  display: flex;
+  flex-direction: column;
   gap: 12px;
 }
 
