@@ -1,104 +1,43 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Malla Universitaria</title>
-  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="estilos.css" />
 </head>
 <body>
   <h1>Malla Universitaria - Ingeniería Civil Informática</h1>
 
-  <!-- Aquí comienzan los 10 semestres --> 
-  <div class="semestre">
-    <h2>Semestre 1</h2>
-    <ul>
-      <li onclick="toggleEstado(this)">Ramo 1</li>
-      <li onclick="toggleEstado(this)">Ramo 2</li>
-      <li onclick="toggleEstado(this)">Ramo 3</li>
-    </ul>
-  </div>
+  <div class="contenedor">
+    <div class="semestre">
+      <h2>Semestre 1</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Código</th>
+            <th>Materia</th>
+            <th>Créditos</th>
+            <th>Prerrequisito</th>
+            <th>Correquisito</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>CIT23MA</td><td>MATEMÁTICAS</td><td>8</td><td>nt</td><td>not</td></tr>
+          <tr><td>CIT23QU</td><td>QUÍMICA</td><td>5</td><td>nt</td><td>nt</td></tr>
+          <tr><td>CIT23II</td><td>INTRODUCCIÓN A LA INGENIERÍA</td><td>3</td><td>nt</td><td>nt</td></tr>
+          <tr><td>CIT23PR</td><td>PROGRAMACIÓN</td><td>6</td><td>nt</td><td>nt</td></tr>
+          <tr><td>CIT23TH</td><td>TALLER DE HERRAMIENTAS COMPUTACIONALES</td><td>3</td><td>nt</td><td>nt</td></tr>
+          <tr><td>CIT23TE</td><td>TALLER DE EXPRESIÓN ESCRITA</td><td>2</td><td>nt</td><td>nt</td></tr>
+          <tr><td>CCLS224</td><td>IDENTIDAD PERSONAL: PSICOLOGÍA Y HUMANIDADES</td><td>3</td><td>nt</td><td>nt</td></tr>
+        </tbody>
+      </table>
+    </div>
 
-  <div class="semestre">
-    <h2>Semestre 2</h2>
-    <ul>
-      <li onclick="toggleEstado(this)">Ramo 1</li>
-      <li onclick="toggleEstado(this)">Ramo 2</li>
-      <li onclick="toggleEstado(this)">Ramo 3</li>
-    </ul>
-  </div>
+    <!-- Puedes agregar más semestres aquí -->
 
-  <div class="semestre">
-    <h2>Semestre 3</h2>
-    <ul>
-      <li onclick="toggleEstado(this)">Ramo 1</li>
-      <li onclick="toggleEstado(this)">Ramo 2</li>
-      <li onclick="toggleEstado(this)">Ramo 3</li>
-    </ul>
   </div>
-
-  <div class="semestre">
-    <h2>Semestre 4</h2>
-    <ul>
-      <li onclick="toggleEstado(this)">Ramo 1</li>
-      <li onclick="toggleEstado(this)">Ramo 2</li>
-      <li onclick="toggleEstado(this)">Ramo 3</li>
-    </ul>
-  </div>
-
-  <div class="semestre">
-    <h2>Semestre 5</h2>
-    <ul>
-      <li onclick="toggleEstado(this)">Ramo 1</li>
-      <li onclick="toggleEstado(this)">Ramo 2</li>
-      <li onclick="toggleEstado(this)">Ramo 3</li>
-    </ul>
-  </div>
-
-  <div class="semestre">
-    <h2>Semestre 6</h2>
-    <ul>
-      <li onclick="toggleEstado(this)">Ramo 1</li>
-      <li onclick="toggleEstado(this)">Ramo 2</li>
-      <li onclick="toggleEstado(this)">Ramo 3</li>
-    </ul>
-  </div>
-
-  <div class="semestre">
-    <h2>Semestre 7</h2>
-    <ul>
-      <li onclick="toggleEstado(this)">Ramo 1</li>
-      <li onclick="toggleEstado(this)">Ramo 2</li>
-      <li onclick="toggleEstado(this)">Ramo 3</li>
-    </ul>
-  </div>
-
-  <div class="semestre">
-    <h2>Semestre 8</h2>
-    <ul>
-      <li onclick="toggleEstado(this)">Ramo 1</li>
-      <li onclick="toggleEstado(this)">Ramo 2</li>
-      <li onclick="toggleEstado(this)">Ramo 3</li>
-    </ul>
-  </div>
-
-  <div class="semestre">
-    <h2>Semestre 9</h2>
-    <ul>
-      <li onclick="toggleEstado(this)">Ramo 1</li>
-      <li onclick="toggleEstado(this)">Ramo 2</li>
-    </ul>
-  </div>
-
-  <div class="semestre">
-    <h2>Semestre 10</h2>
-    <ul>
-      <li onclick="toggleEstado(this)">Proyecto de Título</li>
-      <li onclick="toggleEstado(this)">Electivo 1</li>
-    </ul>
-  </div>
-
-  <!-- Aquí Terminan los 10 semestres -->
 
   <script src="scripts.js"></script>
 </body>
 </html>
+
