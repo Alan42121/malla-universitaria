@@ -72,3 +72,38 @@ li.pendiente {
   background-color: #f8d7da;
   border-left-color: red;
 }
+
+.grid-malla {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.ramo {
+  background: #165aab; /* azul parecido al de la imagen */
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  cursor: pointer;
+  user-select: none;
+}
+
+.ramo .codigo {
+  font-weight: bold;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.ramo .nombre {
+  font-weight: 600;
+  margin-top: 6px;
+}
+
+.ramo .creditos {
+  font-size: 11px;
+  margin-top: 4px;
+  opacity: 0.85;
+}
+
