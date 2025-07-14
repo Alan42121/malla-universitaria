@@ -1,3 +1,4 @@
+/* Estilos generales */
 body {
   font-family: Arial, sans-serif;
   margin: 20px;
@@ -5,14 +6,50 @@ body {
   color: #333;
 }
 
+/* Contenedor que hace que los semestres estén en fila horizontal */
+.contenedor {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding-bottom: 10px;
+}
+
+/* Cada semestre como tarjeta */
 .semestre {
   background: #fff;
   padding: 15px;
   border-radius: 10px;
-  margin-bottom: 20px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  min-width: 350px;
+  flex-shrink: 0;
+  margin-bottom: 20px;
 }
 
+/* Título semestre centrado */
+.semestre h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Estilos para las tablas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 6px 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Estilos para la lista, si decides usarla */
 li {
   cursor: pointer;
   margin: 5px 0;
